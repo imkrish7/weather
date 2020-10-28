@@ -43,7 +43,7 @@ export const SearchBox = ({ city, fetch, setCity }) => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.input_wrapper}>
-			<img src={Location} className={styles.icon} />
+			<img src={Location} className={styles.icon} alt="icon" />
 			<input
 				type="text"
 				value={newCity}
@@ -52,7 +52,7 @@ export const SearchBox = ({ city, fetch, setCity }) => {
 				onChange={handleChange}
 				onKeyPress={onSearch}
 			/>
-			<img onClick={onSearch} src={Search} className={styles.icon} />
+			<img onClick={onSearch} src={Search} className={styles.icon} alt="icon"/>
 			</div>
 			<div className={styles.suggestion}>
 				{cities.length > 0 && <ul className={styles.list}>
@@ -63,7 +63,7 @@ export const SearchBox = ({ city, fetch, setCity }) => {
 							<span>{city.main.temp}<sup>&deg;</sup>C</span>
 						<span className={styles.type}>{city.weather[0].main}</span>
 							</span>
-						<img className={styles.icon_suggestion} src={iconUrl +  city.weather[0].icon + "@2x.png" } />
+						<img className={styles.icon_suggestion} src={iconUrl +  city.weather[0].icon + "@2x.png"}  alt="icon"  />
 							</div>
 						</li>)}
 				</ul>

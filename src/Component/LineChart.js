@@ -32,7 +32,6 @@ export class LineChart extends Component{
 		let width = document.querySelector('.graph').offsetWidth;
 		width = width - margin.left - margin.right
 		let height = 100;
-		let n = this.state.data.length;
 		var xScale = d3.scaleTime()
 						  .domain([new Date(minTime*1000), new Date(maxTime*1000)])
 						  .nice(d3.timeDay)

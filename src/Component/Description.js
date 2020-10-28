@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styles from '../styles/description.module.scss';
 import { LineChart } from './LineChart'
 
@@ -27,7 +27,7 @@ export const Description = ({ current, hourly, offset }) => {
 					</h1>
 				</div>
 				<div className={styles.icon_wrapper}>
-					{ current.weather && <img className={styles.icon} src={iconUrl +  current.weather[0].icon + "@2x.png" } />}
+					{ current.weather && <img className={styles.icon} src={iconUrl +  current.weather[0].icon + "@2x.png" } alt="icon"/>}
 				</div>
 				
 			</div>
