@@ -1,3 +1,4 @@
 import { weekDay } from './dateUtils'
 
-export default { weekDay }
+const exportable = { weekDay }
+export default exportable;

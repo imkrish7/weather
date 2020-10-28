@@ -14,7 +14,7 @@ export const Calendar = ({daily}) => {
 			setWeek([...data])
 		}
 		format()
-	}, [])
+	}, [daily])
 
 	return (
 		<div className={styles.container}>
@@ -32,7 +32,7 @@ export const Calendar = ({daily}) => {
 					<sup>&deg;</sup>
 				</span>
 				<span className={styles.icon_wrapper}>
-					<img className={styles.icon} src={iconUrl + day.icon + "@2x.png"} />
+					<img className={styles.icon} src={iconUrl + day.icon + "@2x.png"} alt="icon"/>
 				</span>
 				<span className={styles.type}>
 					{day.type}

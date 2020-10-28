@@ -23,11 +23,7 @@ export const SearchBox = ({ city, fetch, setCity }) => {
 		const value = e.target.value;
 		setNewCity(value)
 		if(value.length>0){
-			let selectedCity = data.filter(city => {
-			if (city.name.includes(value)){
-				return city;
-			}
-		})
+			let selectedCity = data.filter(city => city.name.includes(value))
 		const cityFetch = await multipleCity(selectedCity)
 		setCities([...cityFetch.list])
 	}
