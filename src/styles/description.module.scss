@@ -1,0 +1,50 @@
+.container{
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	box-shadow:4px 4px 9px #84848454, -4px -4px 9px #fff;	
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	
+}
+
+.current_temp {
+	display: flex;
+	align-items: center;
+}
+
+.temp, .icon_wrapper{
+	margin: 0rem 0.5rem;
+}
+.temp_text{
+	font-size: 2.5rem;
+}
+
+.icon_wrapper{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.icon{
+	width: 100%;
+	height: 100%;
+}
+
+.other_info{
+	display: flex;
+	justify-content: space-between;
+}
+
+.info_wrapper{
+	width: 45%;
+	padding: 1rem;
+	border-radius: 0.3rem;
+	background-color: #cad4ef73;
+	display: flex;
+	flex-direction: column;
+	margin: 0.5rem 0rem;
+}
+
+.header{
+	font-weight: bold;
+}

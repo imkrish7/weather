@@ -1,0 +1,83 @@
+
+.container{
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+}
+
+.input_wrapper{
+	height: 3rem;
+	border-radius:  0.7rem;
+	box-shadow:4px 4px 9px #84848454, -4px -4px 9px #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.2rem 0.5rem;
+}
+
+.icon{
+	width: 7%;
+	height: 1.5rem;
+	margin: 0rem 0.3rem;
+}
+.input{
+	width: 86%;
+	padding: 0;
+	border: none;
+	font-size: 1.3rem;
+	font-weight: 700;
+	background-color: transparent;
+}
+
+.input:focus{
+	outline: none;
+}
+
+.suggestion{
+	z-index: 99;
+	position: absolute;
+	box-shadow:4px 4px 9px #84848454;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 1rem;
+	top: 3.1rem
+}
+.list{
+	list-style: none;
+	// padding: 0.4rem;
+}
+.list_item{
+	padding: 0.9rem 0.5rem;
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.list_item:last-child{
+	border: none;
+	
+}
+.icon_suggestion{
+	width: 2rem;
+	height: 2rem;
+}
+.city{
+	font-weight: bold;
+	margin-right: 0.2rem;
+}
+.state{
+	color: #919191;
+	margin-left: 0.2rem;
+}
+.temp{
+	display: flex;
+	flex-direction: column;
+}
+.type{
+	color: #ccc;
+}
+.temp_info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
