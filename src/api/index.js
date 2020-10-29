@@ -31,7 +31,7 @@ export const locationRequest = async () => {
 		if(isDev){
 			url = 'http://ip-api.com/json'
 		}else{
-			url = '/api/json'
+			url = '/json'
 		}
 		const {data} = await axios.get(url)
 
