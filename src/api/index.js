@@ -26,7 +26,14 @@ export const multipleCity = async(cities) => {
 
 export const locationRequest = async () => {
 	try {
-		const {data} = await axios.get('http://ip-api.com/json')
+		let isDev = process.env.NODE_ENV === 'development'
+		let url = null;
+		if(isDev){
+			url = 'http://ip-api.com/json'
+		}else{
+			url = '/api/json'
+		}
+		const {data} = await axios.get(url)
 
 		return data;
 	} catch (error) {
