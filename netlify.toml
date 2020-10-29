@@ -1,5 +1,6 @@
+
 [[redirects]]
-	from= 'http://ip-api.com/'
+	from = 'http://ip-api.com/'
 	to = 'http://ip-api.com/:splat'
 	status = 200
 	force = true
