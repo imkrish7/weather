@@ -25,6 +25,18 @@ export const multipleCity = async(cities) => {
 }
 
 export const locationRequest = async () => {
-	const {data} = await axios.get('http://ip-api.com/json')
-	return data;
+	try {
+		const {data} = await axios.get('http://ip-api.com/json')
+
+		return data;
+	} catch (error) {
+		console.log(navigator)
+		if('geolocation' in navigator){
+			navigator.geolocation.getCurrentPosition((location)=>{
+				console.log(location)
+			})
+		}
+	}
+	
+	
 }

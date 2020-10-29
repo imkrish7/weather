@@ -29,6 +29,7 @@ function App() {
     setHourlyTemp([...hourly])
     setOffset(timezone_offset)
     let { daily } = await currentForecastRequest(quard, city)
+    
     setDailyForeCast([...daily])
   }
   return (
