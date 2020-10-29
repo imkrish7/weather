@@ -30,7 +30,6 @@ export const locationRequest = async () => {
 
 		return data;
 	} catch (error) {
-		console.log(navigator)
 		if('geolocation' in navigator){
 			navigator.geolocation.getCurrentPosition((location)=>{
 				console.log(location)
