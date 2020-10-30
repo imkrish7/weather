@@ -9,8 +9,8 @@ export const formatData = (data, offset) =>{
 		let { dt } = temp
 		
 		let date = new Date((dt*1000)).getDate()
-		let currentDate = new Date().getDate()
-		if((pastDate === date) || (date === currentDate)){
+		// let currentDate = new Date().getDate()
+		// if((pastDate === date) || (date === currentDate)){
 			
 			if(minTime>dt ){
 				minTime = dt
@@ -26,8 +26,6 @@ export const formatData = (data, offset) =>{
 			}
 			let hourdata = { temp: temp.temp, time: dt, date}
 			return hourdata;
-		}
-		return undefined
 	}).filter(temp => temp !== undefined)
 	return {data: [...result], minTime, maxTime, minTemp, maxTemp};
 }

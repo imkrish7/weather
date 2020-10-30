@@ -16,7 +16,8 @@
 	display: flex;
 	flex-direction: column;
 	padding: 0.5rem;
-	cursor: pointer;
+	
+	border-radius: 0.2rem;
 }
 
 .icon_wrapper{
@@ -36,11 +37,16 @@
 }
 
 .border{
-	border-radius: 0.2rem;
+	
 	background-color: #fff;
 	box-shadow: 4px 4px 9px #ccc, -4px -4px 9px #fff;
 }
 
-.border:hover{
-	box-shadow: none;
+
+
+@media (hover: hover) and (pointer: fine){
+	.border:hover{
+		box-shadow: none;
+		cursor: pointer;
+	}
 }
