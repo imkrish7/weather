@@ -32,6 +32,7 @@ export const formatWeekDay = (data) => {
 	let result = data.map(day => {
 		let date = new Date(day.dt*1000)
 		let currentDate = new Date()
+		console.log(date.getDay(), date)
 		let temp = {
 			icon: day.weather[0].icon,
 			date,
