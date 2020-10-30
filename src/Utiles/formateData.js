@@ -1,7 +1,6 @@
 import { weekDay } from './dateUtils'
 export const formatData = (data, offset) =>{
 
-	let pastDate = new Date().getDate() - 1
 	let minTime =Number.MAX_SAFE_INTEGER, maxTime=Number.MIN_SAFE_INTEGER;
 	let minTemp =Number.MAX_SAFE_INTEGER, maxTemp=Number.MIN_SAFE_INTEGER;
 	if(data){
@@ -9,8 +8,6 @@ export const formatData = (data, offset) =>{
 		let { dt } = temp
 		
 		let date = new Date((dt*1000)).getDate()
-		// let currentDate = new Date().getDate()
-		// if((pastDate === date) || (date === currentDate)){
 			
 			if(minTime>dt ){
 				minTime = dt
